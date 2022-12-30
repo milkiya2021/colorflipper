@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 10px;
+    overflow: hidden;
+  }
+  
+  .navi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    height: 3rem;
+  }
+  
+  .title {
+    color: blueviolet;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .clicked:hover {
+    background-color: rgb(89, 244, 255);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:visited {
+    background-color: rgb(89, 244, 255);
+  }
+  
+  main {
+    min-height: calc(100vh - 3rem);
+    display: grid; /*그리드 공부를 하자. */
+    place-items: center;
+    position: relative;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  button {
+    margin: 0.5rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #000;
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  button:hover {
+    background-color: rgb(38, 228, 196);
+  }
+  
+  button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 10px;
+  }
